@@ -891,13 +891,6 @@ img {
   overflow: hidden;
 }
 
-.hidden {
-  -moz-appearance: none;
-  -webkit-appearance: none;
-  appearance: none;
-  position: absolute;
-}
-
 .link {
   transition: color 250ms var(--main-transition-timing-function);
 }
