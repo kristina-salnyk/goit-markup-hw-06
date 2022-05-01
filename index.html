@@ -62,7 +62,7 @@
       <!-- Hero -->
       <section class="hero section">
         <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button class="hero-btn" type="button" data-modal-open>Заказать услугу</button>
+        <button class="hero-btn btn" type="button" data-modal-open>Заказать услугу</button>
       </section>
 
       <!-- Features -->
@@ -415,7 +415,7 @@
           </address>
         </div>
         <div class="connect-links">
-          <p class="connect-links-title">присоединяйтесь</p>
+          <p class="connect-links-title footer-block-title">присоединяйтесь</p>
           <ul class="social-links-list">
             <li class="social-links-list-item">
               <a href="#">
@@ -447,19 +447,105 @@
             </li>
           </ul>
         </div>
+        <div class="subscription">
+          <p class="subscription-title footer-block-title">Подпишитесь на рассылку</p>
+          <form class="subscription-form" name="subscription-form" autocomplete="on" novalidate>
+            <div class="subscription-form-elements">
+              <input
+                class="subscription-email"
+                type="email"
+                name="subscription-email"
+                id="subscription-email"
+                placeholder="E-mail"
+              />
+              <button class="subscription-btn btn" type="submit">
+                Подписаться
+                <svg class="send" width="24" height="24">
+                  <use href="./images/icons.svg#send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
 
     <!-- Modal window -->
     <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <div class="modal-btn">
-          <button class="modal-btn-close" data-modal-close>
+      <div class="service-order-modal">
+        <div class="service-order-close">
+          <button class="service-order-close-btn" data-modal-close>
             <svg class="close-black" width="11" height="11">
               <use href="./images/icons.svg#close-black"></use>
             </svg>
           </button>
         </div>
+        <h2 class="service-order-title">Оставьте свои данные, мы вам перезвоним</h2>
+        <form class="service-order-form" name="service-order-form" autocomplete="on" novalidate>
+          <div class="service-order-field text-field">
+            <label class="service-order-label">
+              Имя
+              <div class="service-order-field-wrap">
+                <input class="service-order-name" type="text" name="service-order-name" />
+                <svg class="name" width="12" height="12">
+                  <use href="./images/icons.svg#name"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="service-order-field text-field">
+            <label class="service-order-label">
+              Телефон
+              <div class="service-order-field-wrap">
+                <input class="service-order-tel" type="tel" name="service-order-tel" />
+                <svg class="tel" width="13" height="13">
+                  <use href="./images/icons.svg#tel"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="service-order-field text-field">
+            <label class="service-order-label">
+              Почта
+              <div class="service-order-field-wrap">
+                <input class="service-order-email" type="email" name="service-order-email" />
+                <svg class="email" width="15" height="12">
+                  <use href="./images/icons.svg#email"></use>
+                </svg>
+              </div>
+            </label>
+          </div>
+          <div class="service-order-field textarea-field">
+            <label class="service-order-label">
+              Комментарий
+              <textarea
+                class="service-order-comment"
+                name="service-order-comment"
+                placeholder="Введите текст"
+              ></textarea>
+            </label>
+          </div>
+          <div class="service-order-field checkbox-field">
+            <label class="service-order-label">
+              <input
+                class="service-order-policy hidden"
+                type="checkbox"
+                name="service-order-policy"
+                value="policy"
+              />
+              <span class="service-order-policy-icon">
+                <svg class="close-black" width="16" height="15">
+                  <use href="./images/icons.svg#check"></use>
+                </svg>
+              </span>
+              Соглашаюсь с рассылкой и принимаю &nbsp;
+              <a href="#">Условия договора</a>
+            </label>
+          </div>
+          <div class="service-order-btn">
+            <button class="service-order-send-btn btn" type="submit">Отправить</button>
+          </div>
+        </form>
       </div>
     </div>
 
